@@ -80,7 +80,7 @@ th, td {
     color: white;
 }
 .completed {
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     padding: 5px;
     border-radius: 5px;
     color: white;
