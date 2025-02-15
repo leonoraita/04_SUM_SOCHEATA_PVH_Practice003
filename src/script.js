@@ -58,5 +58,7 @@ function toggleStatus(element, index) {
         element.classList.remove("pending");
         element.classList.add("completed");
         element.textContent = "Completed";
+    
     }
+
 }
