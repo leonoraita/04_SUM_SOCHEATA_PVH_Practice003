@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dear my beloved teacher! This is my Practice 03</h1>
+    <div class="container">
+        <div class="task-form">
+            <h2 class="set-margin">Add Task</h2>
+            <label for="taskName">Task Name</label><br>
+            <input type="text" id="taskName" placeholder="HRD Homework">
+            <label for="taskDate">Date</label><br>
+            <input type="date" id="taskDate">
+            <label for="taskPriority">Priority</label><br>
+            <select id="taskPriority">
+                <option value="">Select Priority</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button onclick="addTask()">Add New Task</button>
+        </div>
+        <div class="task-list">
+            <h2>Task List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Due Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody">
+                    <tr>
+                        <td>Complete JavaScript Project</td>
+                        <td>2023-12-01</td>
+                        <td class="high">High</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>Review Team Documentation</td>
+                        <td>2023-12-03</td>
+                        <td class="medium">Medium</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
